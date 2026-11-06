@@ -1,8 +1,8 @@
 all:
   - name: 法国-hysteria-1
     type: hysteria
-    server: 62.210.70.191
-    port: 24667
+    server: 163.172.117.163
+    port: 36699
     auth-str: dongtaiwang.com
     sni: bing.com
     skip-cert-verify: true
@@ -13,9 +13,9 @@ all:
     down: 55 Mbps
   - name: 法国-hysteria-2
     type: hysteria
-    server: 163.172.117.163
-    port: 36699
-    auth-str: dongtaiwang.com
+    server: 62.210.70.191
+    port: 23556
+    auth-str: github.com/Alvin9999-newpac/fanqiang
     sni: bing.com
     skip-cert-verify: true
     alpn:
@@ -37,9 +37,9 @@ all:
     down: 55 Mbps
   - name: 法国-hysteria-3
     type: hysteria
-    server: 62.210.70.191
-    port: 23556
-    auth-str: github.com/Alvin9999-newpac/fanqiang
+    server: 62.210.28.175
+    port: 24667
+    auth-str: dongtaiwang.com
     sni: bing.com
     skip-cert-verify: true
     alpn:
@@ -96,14 +96,6 @@ all:
     username: Alvin9999-newpac
     password: github.com/Alvin9999-newpac/fanqiang
     port: 33556
-  - name: 美国-mieru-2
-    type: mieru
-    server: 157.254.223.43
-    transport: TCP
-    udp: true
-    username: dongtaiwang.com
-    password: dongtaiwang.com
-    port: 23456
   - tls: true
     udp: true
     sni: www.yahoo.com
@@ -128,8 +120,8 @@ all:
 udp:
   - name: 法国-hysteria-1
     type: hysteria
-    server: 62.210.70.191
-    port: 24667
+    server: 163.172.117.163
+    port: 36699
     auth-str: dongtaiwang.com
     sni: bing.com
     skip-cert-verify: true
@@ -140,9 +132,9 @@ udp:
     down: 55 Mbps
   - name: 法国-hysteria-2
     type: hysteria
-    server: 163.172.117.163
-    port: 36699
-    auth-str: dongtaiwang.com
+    server: 62.210.70.191
+    port: 23556
+    auth-str: github.com/Alvin9999-newpac/fanqiang
     sni: bing.com
     skip-cert-verify: true
     alpn:
@@ -164,9 +156,9 @@ udp:
     down: 55 Mbps
   - name: 法国-hysteria-3
     type: hysteria
-    server: 62.210.70.191
-    port: 23556
-    auth-str: github.com/Alvin9999-newpac/fanqiang
+    server: 62.210.28.175
+    port: 24667
+    auth-str: dongtaiwang.com
     sni: bing.com
     skip-cert-verify: true
     alpn:
@@ -218,18 +210,6 @@ udp:
 ai_gemini:
   - name: 法国-hysteria-1
     type: hysteria
-    server: 62.210.70.191
-    port: 24667
-    auth-str: dongtaiwang.com
-    sni: bing.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-    protocol: udp
-    up: 11 Mbps
-    down: 55 Mbps
-  - name: 法国-hysteria-2
-    type: hysteria
     server: 163.172.117.163
     port: 36699
     auth-str: dongtaiwang.com
@@ -240,7 +220,7 @@ ai_gemini:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: 法国-hysteria-3
+  - name: 法国-hysteria-2
     type: hysteria
     server: 62.210.70.191
     port: 23556
@@ -252,14 +232,18 @@ ai_gemini:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: 美国-mieru-2
-    type: mieru
-    server: 157.254.223.43
-    transport: TCP
-    udp: true
-    username: dongtaiwang.com
-    password: dongtaiwang.com
-    port: 23456
+  - name: 法国-hysteria-3
+    type: hysteria
+    server: 62.210.28.175
+    port: 24667
+    auth-str: dongtaiwang.com
+    sni: bing.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
 porn_all:
   - name: 德国-hysteria-1
     type: hysteria
@@ -330,11 +314,3 @@ porn_x:
     username: Alvin9999-newpac
     password: github.com/Alvin9999-newpac/fanqiang
     port: 33556
-  - name: 美国-mieru-2
-    type: mieru
-    server: 157.254.223.43
-    transport: TCP
-    udp: true
-    username: dongtaiwang.com
-    password: dongtaiwang.com
-    port: 23456
