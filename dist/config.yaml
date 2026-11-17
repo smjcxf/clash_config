@@ -46,8 +46,8 @@ dns:
 proxies:
   - name: 法国-hysteria-1
     type: hysteria
-    server: 163.172.117.163
-    port: 36699
+    server: 62.210.124.132
+    port: 24667
     auth-str: dongtaiwang.com
     sni: bing.com
     skip-cert-verify: true
@@ -74,18 +74,6 @@ proxies:
     port: 54177
     auth-str: dongtaiwang.com
     sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-    protocol: udp
-    up: 11 Mbps
-    down: 55 Mbps
-  - name: 法国-hysteria-3
-    type: hysteria
-    server: 62.210.28.175
-    port: 24667
-    auth-str: dongtaiwang.com
-    sni: bing.com
     skip-cert-verify: true
     alpn:
       - h3
@@ -211,7 +199,6 @@ proxy-groups:
       - "法国-hysteria-1"
       - "法国-hysteria-2"
       - "德国-hysteria-1"
-      - "法国-hysteria-3"
       - "美国-hysteria-1"
       - "德国-hysteria-2"
       - "美国-hysteria-2"
@@ -225,7 +212,6 @@ proxy-groups:
       - "法国-hysteria-1"
       - "法国-hysteria-2"
       - "德国-hysteria-1"
-      - "法国-hysteria-3"
       - "美国-hysteria-1"
       - "德国-hysteria-2"
       - "美国-hysteria-2"
@@ -239,7 +225,6 @@ proxy-groups:
       - "法国-hysteria-1"
       - "法国-hysteria-2"
       - "德国-hysteria-1"
-      - "法国-hysteria-3"
       - "美国-hysteria-1"
       - "德国-hysteria-2"
       - "美国-hysteria-2"
@@ -254,7 +239,13 @@ proxy-groups:
     proxies:
       - "法国-hysteria-1"
       - "法国-hysteria-2"
-      - "法国-hysteria-3"
+      - "德国-hysteria-1"
+      - "美国-hysteria-1"
+      - "德国-hysteria-2"
+      - "美国-hysteria-2"
+      - "西班牙-hysteria2-1"
+      - "美国-mieru-1"
+      - "西班牙-vless-1"
     url: "https://www.google.com/generate_204"
     interval: 3600
     timeout: 5000
